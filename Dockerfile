@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+MAINTAINER juliop1980 <perezduranjulio@gmail.com>
+
 # instalar dependencias para hadoop
 RUN apt-get update && \
     apt-get install -y wget \
