@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# compilar hadoop 3.1.1 por default
-version=${1:-3.1.1}
+# compilar hadoop 3.2.0 por default
+version=${1:-3.2.0}
 
 cd /hadoop-$version-src
 
