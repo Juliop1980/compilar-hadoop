@@ -1,4 +1,4 @@
-FROM ubuntu:14
+FROM ubuntu:14.04
 
 MAINTAINER juliop1980 <perezduranjulio@gmail.com>
 
