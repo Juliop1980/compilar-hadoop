@@ -1,11 +1,11 @@
-FROM ubuntu:latest
+FROM ubuntu:14
 
 MAINTAINER juliop1980 <perezduranjulio@gmail.com>
 
 # instalar dependencias para hadoop
 RUN apt-get update && \
    apt-get install -y wget \
-                       openjdk-12-jdk \
+                       openjdk-8-jdk \
                        libprotobuf-dev \
                        protobuf-compiler \
                        maven \
