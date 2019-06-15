@@ -1,11 +1,11 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 
-MAINTAINER juliop1980 <perezduranjulio@gmail.com>
+MAINTAINER Julio Perez <perezduranjulio@gmail.com>
 
-# instalar dependencias para hadoop
-RUN apt-get update && \
-   apt-get install -y wget \
-                       openjdk-8-jdk \
+# instalar dependencias para compilar hadoop
+RUN apt-get update &&\
+    apt-get install -y wget \
+                       openjdk-11-jdk \
                        libprotobuf-dev \
                        protobuf-compiler \
                        maven \
@@ -14,7 +14,7 @@ RUN apt-get update && \
                        pkg-config \
                        libssl-dev \
                        zlib1g-dev \
-                       llvm-gcc \
+                       gcc \
                        automake \
                        autoconf \
                        make
