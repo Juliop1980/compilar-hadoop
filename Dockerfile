@@ -19,6 +19,9 @@ RUN apt-get update &&\
                        autoconf \
                        make
 
+# configurar variable de ambiente de java
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 
+
 COPY compile.sh /root/compile.sh
 
 RUN chmod +x /root/compile.sh
