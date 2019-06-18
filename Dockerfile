@@ -5,7 +5,7 @@ MAINTAINER Julio Perez <perezduranjulio@gmail.com>
 # instalar dependencias para compilar hadoop
 RUN apt-get update &&\
     apt-get install -y wget \
-                       openjdk-11-jdk \
+                       openjdk-10-jdk \
                        libprotobuf-dev \
                        protobuf-compiler \
                        maven \
